@@ -1,8 +1,8 @@
 name: Job Radar daily run
 
 on:
-  schedule:
-    - cron: "17 4 * * *"     # every day 04:17 UTC (05:17 Milan); off the :00/:30 peak, when GitHub drops schedules
+  # Daily schedule switched off: the daily scan runs from the Chrome-Extension repository.
+  # To turn it back on, restore:  schedule: [{cron: "17 4 * * *"}]
   workflow_dispatch: {}
 
 permissions:
